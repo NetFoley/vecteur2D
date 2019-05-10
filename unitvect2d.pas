@@ -24,22 +24,26 @@ function produitVect(vect1 : Vect2D; vect2: Vect2D) : Vect2D;
 implementation
 
 function getVectPosX(position : Vect2D) : integer;
+//Renvoit la valeur X d'un vecteur position
 	begin
 	getVectPosX := position.posX;
 	end;
 
 function getVectPosY(position : Vect2D) : integer;
+//Renvoit la valeur Y d'un vecteur position 
 	begin
 	getVectPosY := position.posY;
 	end;
 
 procedure setVectPosX(var position : Vect2D; X : integer);
+//Affecte la valeur X à la position X d'un vecteur position
 	begin
 	writeln('Affectation de la valeur ', X, ' a laxe X');
 	position.posX := X;
 	end;
 
 procedure setVectPosY(var position : Vect2D; Y : integer);
+//Affecte la valeur Y à la position Y d'un vecteur position
 	begin
 	writeln('Affectation de la valeur ', Y, ' a laxe Y');
 	position.posY := Y;
@@ -47,6 +51,7 @@ procedure setVectPosY(var position : Vect2D; Y : integer);
 
 	
 procedure afficherVect(vecteur : Vect2D);
+//AFfiche les valeurs X et Y d'un vecteur
 	begin
 	writeln('Vecteur : ', 'X : ', vecteur.posX, ', Y : ', vecteur.posY);
 	end;
